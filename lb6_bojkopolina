@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double number;
+    cout << "введіть значення: ";
+    cin >> number;
+    double* ptr = &number;
+    cout << "початкове значення: " << *ptr << '\n';
+    *ptr += 5;
+    cout << "результат: " << *ptr << '\n';
+}
